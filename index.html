@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    pre {
+    font-family: 'Times New Roman', Times, serif;}
+
+    div.ylw {
+        border: 1px solid;
+        padding: 20px;
+        width: 300px;
+        resize: horizontal;
+        overflow: auto;
+    }
+
+    div.ex1 {
+        border: 1px solid;
+        outline: 4px solid #FF00BF;
+        outline-offset: 15px;
+        margin: 20px;
+    }
+
+    div.ex2 {
+        border: 1px solid;
+        outline: 5px dashed #FFFF00;
+        outline-offset: 5px;
+        margin: 40px;
+    }
+
+    div.divv {
+        border: 1px solid;
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        background-color: yellow;
+        transform: translate(50px);
+
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS CheatSheet</title>
+</head>
+<body>
+    <h1>CSS User Interface</h1>
+    <pre>
+        CSS User Interface covers two of the following properties:
+        (a) resize
+        (b) outline-offset
+    </pre>
+    <h2>CSS Resize</h2>
+    <p>The resize property specifies if and how an element should be resizable by the user.</p>
+    <p>Let's see an example below!</p>
+    <div class="ylw">
+        <p>Let the user resize only the width of this element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+    <h2>CSS Outline Offset</h2>
+    <p>This property adds space between an outline and the edge or border of an element.</p>
+    <p>Outline differs from borders! Unlike borders, the outline is drawn outside the element's border and may overlap other content. Outline is not affected by the element's dimension since it;s not a part of an element.</p>
+    <p>The following examples use the outline offset property to add space between the border and the outline</p>
+    <div class="ex1">This div has a 4 pixels solid pink outline and 15 pixels outside the border edge.</div>
+    <div class="ex2">This div has a 5 pizels dashed yellow outline and 5 pixels outside the border edge.</div>
+    <h2>CSS 2D Transforms</h2>
+    <pre>
+        CSS transforms allow you to move, rotate, scale, and skew elements.
+        Follwing are the 2d tranfromation methods used with CSS transform property:
+        (a) translate()
+        (b) rotate()
+        (c) scaleX()
+        (d) scaleY()
+        (e) scale()
+        (d) skewX()
+        (e) skewY()
+        (d) skew()
+        (f) matrix()
+    </pre>
+    <h2>The translate() Method</h2>
+    <p>THe translate() method moves an element from its current position (according to the parameters given for the X-axis or Y-axis.</p>
+    <p>The following example moves the div element 50 pixels to the right, and 100 pixels down from its current position.</p>
+    <div class="divv">This div element is moved 50 pixles to the right.</div>
+</body>
+</html>
